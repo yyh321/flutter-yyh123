@@ -27,11 +27,11 @@ class Home extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.grey[100],
         appBar: AppBar(
-          leading: IconButton(
-            icon: Icon(Icons.menu),
-            tooltip: 'Navigation',
-            onPressed: () => debugPrint('Naviagation button is pressed.'),
-          ),
+          // leading: IconButton(
+          //   icon: Icon(Icons.menu),
+          //   tooltip: 'Navigation',
+          //   onPressed: () => debugPrint('Naviagation button is pressed.'),
+          // ),
           title: Text('yyh123'),
           actions: <Widget>[
             IconButton(
@@ -67,11 +67,11 @@ class Home extends StatelessWidget {
               child: ListView(
                 padding: EdgeInsets.zero,
                 children: <Widget>[
-                  DrawerHeader(
-                    child: Text('header'.toUpperCase()),
-                    decoration: BoxDecoration(
-                      color: Colors.grey[100],
+                  UserAccountsDrawerHeader(
+                    accountName: Text('yyh123',
+                    style: TextStyle(fontWeight: FontWeight.bold),
                     ),
+                    
                   ),
                   ListTile(
                     title: Text('messages', textAlign: TextAlign.right),
